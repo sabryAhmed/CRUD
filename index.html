@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <title>project</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     
+</head>
+<body>
+
+ 
+       <form>
+              <h1>crud</h1>
+              <input type="text" placeholder="title" id="title">
+              <div>
+                     <input type="number"   placeholder="price" class="price" onkeyup="getTotal()">
+                     <input type="number"   placeholder="taxes" class="taxes" onkeyup="getTotal()">
+                     <input type="number"   placeholder="ads" class="ads" onkeyup="getTotal()">
+                     <input type="number"   placeholder="discount" class="discount" onkeyup="getTotal()">
+                     <span class="bg-danger total"></span>
+                     
+                    
+              </div>
+              
+              <input type="number" placeholder="count" class="count">
+              <input type="text" placeholder="category" class="category">
+              <button class="submit btn btn-info w-50" >create</button>
+              <input type="search" onkeyup="searchData(this.value)" placeholder="search" class="search">
+              
+              
+       </div> 
+</form>
+
+       <div class="search_with" >
+              
+              
+              <button class="bg-info w-25" onclick="searchWith(this.id) " id="SearchCategory">search with category</button>
+              <button  class="bg-info w-25" onclick="searchWith(this.id) " id="SearchTitle">search with title</button>
+       </div>
+
+       <div class="card">
+
+              <div>
+                     <button class="deletAll">deleteAll</button>
+              </div>
+       </div>
+
+
+      
+
+        <div class="contanir">
+              <table >
+                     
+
+                            <thead>
+                                   <tr>
+                                          <th>id</td>
+                                          <th>title</td>
+                                          <th>price</th>
+                                          <th>taxets</th>
+                                          <th>ads</th>
+                                          <th>discount</th>
+                                          <th>total</th>
+                                          <th>category</th>
+                                        
+                                          <th>delet</th>
+                                          <th>Updeat</th>
+                                   </tr>
+                            </thead>
+                            
+                            <tr>
+                                   
+                                   
+                                   
+<!--                          <tr>
+                                         <td>code</td>
+                                         <td>Iphone</td>
+                                         <td>cairo</td>
+                                         <td>Egy</td>
+                                         <td>012023</td>
+                                         <td>500$</td>
+                                         <td>10%</td>
+                                         <td>phones</td> -->
+                                             <!-- <td><button onclick="delet_item()" id="delet">delet</button></td> -->
+                                          <!-- <td><button class="yallo" id="ubdeat" onclick="Ubdeat_prodects()">UBdeat</button></td>  -->
+<!-- </tr> -->
+                      
+                                   
+                            
+                            
+                            
+                            
+                     </tbody>
+                     
+              </table>
+              <button id="clear" class="deletall" >deletAll</button>
+<!--             
+              <button id="test" class="deletall" >test</button> -->
+                     
+                     
+                     
+                     
+              </div>
+              
+       </div>
+       
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+<script src="main.js"></script>
+</body>
+</html>
